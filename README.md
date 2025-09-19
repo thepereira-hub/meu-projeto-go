@@ -58,17 +58,16 @@ git remote add origin https://github.com/<seu-usuario>/meu-projeto-go.git
 git push -u origin main
 ```
 
-### 5. Entrega
-👉 Enviar o **link do repositório no GitHub** como resposta à atividade.
-
 ---
 
-## 🎯 Desafio 
-- Alterar a função `SayHello()` no arquivo `internal/hello/hello.go` para mostrar uma mensagem personalizada.
-- Rodar novamente e ver a saída personalizada.
-- Subir no GitHub com um novo commit.
+## 🎯 Desafios realizados:
+- Parte 1 - Fibonacci:  
+  - Foi criada uma nova função `Fibonacci(n int) int` no arquivo `internal/fibonacci/fibonacci.go` que retorna o n-ésimo número da sequência de Fibonacci.
+  - Ela stá sendo chamada na função `main.go` e imprimindo o resultado.
+  - Ao final, foi: executada, testada(aprovada) e realizado commit do código no GitHub.
 
-- Parte 2 - Fibonacci:  
-  - Criar uma nova função `Fibonacci(n int) int` no arquivo `internal/fibonacci/fibonacci.go` que retorna o n-ésimo número da sequência de Fibonacci.
-  - Chamar essa função no `main.go` e imprimir o resultado.
-  - Rodar, testar e subir no GitHub.
+- Parte 2 - Cálculo IMC (índice de massa corporal):
+  - Foi criada uma nova função `CalculaIMC(peso float64, altura float64)float64` no arquivo `internal/imc/calculoIMC.go` que calcula o índice de massa corporal.
+  -Ela está sendo chamada na função `main.go` e imprimindo o resultado.
+
+  - OBS: foi adaptado a função main, criando um menu para que sejam selecionadas quais funções executar.

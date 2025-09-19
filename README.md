@@ -9,7 +9,7 @@ Aqui vamos aprender a criar, rodar, buildar e publicar um projeto em Go, já usa
 ```
 meu-projeto-go/
 ├── cmd/app/          -> ponto de entrada da aplicação (main.go)
-├── internal/hello/   -> código interno, não exportável
+├── internal/         -> código interno, não exportável
 ├── go.mod            -> arquivo de módulo Go
 └── README.md         -> instruções do projeto
 ```
@@ -23,7 +23,7 @@ meu-projeto-go/
 
 ## 🚀 Passo a Passo da Aula
 
-### 1. Clonar ou baixar este repositório /*OK*/
+### 1. Clonar ou baixar este repositório /OK/
 ```bash
 git clone URL_PROJETO
 cd meu-projeto-go
@@ -31,7 +31,7 @@ cd meu-projeto-go
 
 Se estiver usando o ZIP entregue, basta descompactar e entrar na pasta.
 
-### 2. Rodar o projeto
+### 2. Rodar o projeto /OK/
 ```bash
 go run ./cmd/app
 ```
@@ -39,8 +39,12 @@ go run ./cmd/app
 ➡️ Saída esperada:
 ```
 🚀 Meu primeiro projeto em Go com estrutura de mercado!
-Hello Word in FacINpro! 👋
+
 ```
+Escolha uma opção:
+1 - Calcular Fibonacci
+2 - Calcular IMC (Índice de Massa Corporal)
+Digite o número da opção desejada:
 
 ### 3. Gerar um executável (build)
 ```bash
@@ -71,3 +75,6 @@ git push -u origin main
   -Ela está sendo chamada na função `main.go` e imprimindo o resultado.
 
   - OBS: foi adaptado a função main, criando um menu para que sejam selecionadas quais funções executar.
+
+- Parte 3 - Função anônima que realiza uma multiplicação de dois números:
+  - A função foi atribuída a variável "multiplicar", no próprio main, case 3. Ela realiza a multiplicação de dois números inseridos e retorna o resultado, com uma casa decimal. 

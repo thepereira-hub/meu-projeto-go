@@ -18,6 +18,7 @@ func main() {
     fmt.Println("\nEscolha uma opção:")
     fmt.Println("1 - Calcular Fibonacci")
     fmt.Println("2 - Calcular IMC (Índice de Massa Corporal)")
+    fmt.Println("3 - Multiplicar dois números")
     fmt.Print("Digite o número da opção desejada: ")
 
     var opcao int
@@ -45,6 +46,20 @@ func main() {
         fmt.Scanln(&altura)
         resultado := imc.CalculaIMC(peso, altura)
         fmt.Printf("Seu IMC é: %.2f\n", resultado)
+    // case 3: contém uma função anônima para multiplicar dois números
+    case 3:
+            var n1, n2 float64
+            fmt.Println("Digite dois números para multiplar:")
+            fmt.Print("Primeiro número:")
+            fmt.Scanln(&n1)
+            fmt.Print("Segundo número:")
+            fmt.Scanln(&n2)
+            multiplicar := func(a, b float64) float64 {
+                return a * b
+            }
+            resultado := multiplicar(n1, n2)
+            fmt.Printf("O resultado da multiplicação é: %.1f\n", resultado)
+    // default: trata opções inválidas
     default:
         fmt.Println("Opção inválida.")
     }

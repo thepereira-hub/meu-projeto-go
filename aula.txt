@@ -1,0 +1,2 @@
+Olá! Esta é a nossa aula de manipulação de arquivos em Go.
+Linha 2: vamos ler isso já já.
